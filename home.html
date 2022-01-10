@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+       
+        body 
+        {
+            background-image: url("wall.jpg");
+            
+        }
+        header{
+            /* border: 2px solid yellow; */
+            height: 120px; 
+        }
+        header img{height: 120px; float: left; width: 10%;}
+        .navbar{
+            margin: 33px 5px;
+            /* border: 2px dashed wheat; */
+            float: left;
+            width: 60%;
+            position: relative;
+            display:inline-block;
+        }
+        .navbar ul{overflow: auto;     margin: 0; padding: 0;  }
+        .navbar li{
+            float: left;
+            list-style: none;
+            }
+        .navbar li a {
+            color: white; 
+            display: block;   
+            padding: 15px;
+            font-size: 20px;
+        }
+        .fbuttons{
+            /* border: 2px solid pink; */
+            display: inline;
+            float:right;
+            margin: 20px;
+            position: absolute;
+        }
+         button{
+            font-size:15px;
+            padding: 5px;
+            margin: 25px 10px;
+            cursor: pointer;
+        }
+        .form1{
+            border-radius: 10px;
+            border: 7px double pink;
+            width: 40%;
+            height: 100%;
+            color: white;
+            font-size: 25;
+            padding: 40px;
+            margin-top: 80px;
+            margin-left: 80px;
+            text-align: center;
+        }
+        .form1 form input{
+            margin: 5px; 
+        }
+        .form1 form button{
+            margin: 05px;
+            background-color: white;
+            cursor: none;
+        }
+
+        
+        
+    </style>
+    <title>Home Page</title>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png">
+        <nav class="navbar">
+            <ul> 
+            <li><a href="http://www.google.com">Home</a></li>
+            <li><a href="http://www.google.com">About Us</a></li>
+            <li><a href="http://www.google.com">Fitness Calculator</a></li>
+            <li><a href="http://www.google.com">Contact Us</a></li>
+            </ul>
+        </nav>
+        <nav class="fbuttons">
+           <button>Call Us Now</button>
+            <button>Email Us</button>
+             
+        </nav>
+    </header>
+    <div class="form1">
+        <form action="nothing.php">
+            <b>JOIN THE BEST GYM OF INDIA</b> <br>
+            <input type="text" placeholder="Enter your Name"><br>
+            Gender :
+           <button onclick="">M</button><input type="radio" name="gender">
+           <button>F</button><input type="radio" name="gender">
+           <br>
+            <input type="email" placeholder="Enter your Email id"><br>
+            <input type="text" placeholder="Enter your Phone No"><br>
+            <input type="text" placeholder="Enter your Address"><br>
+            <input style="width: 50%;" type="submit" value="SUBMIT">
+        </form>
+    </div>
+
+
+</body>
+</html>
